@@ -1,7 +1,22 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { BsPersonLinesFill } from "react-icons/bs";
-import SocialLink from "./SocialLink";
+
+const SocialLink = (props) => {
+  return (
+      <li className={`ml-[-100px] hover:ml-[0px] duration-150 w-[160px] h-[60px] ${props.color}`}>
+        <a
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={props.name}
+          className="w-full p-4 flex justify-between items-center text-white"
+        >
+          {props.name} {props.icon}
+        </a>
+      </li>
+  )
+}
 
 const SocialLinkMenu = () => {
   return (
