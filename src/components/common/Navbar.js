@@ -1,7 +1,7 @@
 import logo from "../../assets/images/Rukesh Logo.png";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useState } from "react";
-import SocialLinkMenu from "./SocialLinkMenu/SocialLinkMenu";
+import SocialLinkMenu from "./SocialLinkMenu";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       {/* nav list */}
-      <ul className="hidden md:flex gap-4 text-sm">
+      <ul className="hidden md:flex gap-4 text-xl">
         <li>Home</li>
         <li>About</li>
         <li>Work</li>
