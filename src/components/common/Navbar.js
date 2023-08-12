@@ -1,7 +1,7 @@
 import logo from "../../assets/images/Rukesh Logo.png";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useState } from "react";
-import SocialLink from "./SocialLink";
+import SocialLinkMenu from "./SocialLinkMenu/SocialLinkMenu";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
       </ul>
 
       {/* social icon */}
-        <SocialLink/>
+        <SocialLinkMenu/>
     </div>
   );
 };
