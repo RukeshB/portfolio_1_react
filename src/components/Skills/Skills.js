@@ -7,6 +7,41 @@ import postgresql from "../../assets/images/postgresql.png";
 import react from "../../assets/images/react.png";
 import tailwindcss from "../../assets/images/tailwindcss.png";
 
+const skillList = [
+  {
+    logo: html,
+    name: "HTML",
+  },
+  {
+    logo: css,
+    name: "CSS",
+  },
+  {
+    logo: js,
+    name: "JS",
+  },
+  {
+    logo: ruby,
+    name: "Ruby",
+  },
+  {
+    logo: tailwindcss,
+    name: "Tailwind CSS",
+  },
+  {
+    logo: react,
+    name: "React",
+  },
+  {
+    logo: postgresql,
+    name: "PostgreSQL",
+  },
+  {
+    logo: rails,
+    name: "Ruby on Rails",
+  },
+];
+
 const SkillsCard = (props) => {
   return (
     <div className="px-10 py-8 duration-150 shadow-md shadow-gray-700 hover:scale-110">
@@ -15,6 +50,10 @@ const SkillsCard = (props) => {
     </div>
   );
 };
+
+const skillCardList = skillList.map((skill) => {
+  return <SkillsCard logo={skill.logo} name={skill.name} key={skill.name} />;
+});
 
 const Skills = () => {
   return (
@@ -26,14 +65,7 @@ const Skills = () => {
           </h3>
         </div>
         <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-4 sm:gap-6">
-          <SkillsCard logo={html} name="HTML" />
-          <SkillsCard logo={css} name="CSS" />
-          <SkillsCard logo={js} name="JS" />
-          <SkillsCard logo={ruby} name="Ruby" />
-          <SkillsCard logo={tailwindcss} name="Tailwind CSS" />
-          <SkillsCard logo={react} name="React" />
-          <SkillsCard logo={postgresql} name="Postgresql" />
-          <SkillsCard logo={rails} name="Ruby on Rails" />
+          {skillCardList}
         </div>
       </div>
     </div>
