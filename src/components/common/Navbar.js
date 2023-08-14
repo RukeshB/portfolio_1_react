@@ -32,7 +32,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="fixed bg-[#263A5F] flex justify-between items-center w-screen px-4 py-2 h-14 text-white">
+    <div className="fixed bg-[#0a192f] flex justify-between items-center w-screen px-4 py-2 h-14 text-white">
       {/* logo */}
       <div>
         <img src={logo} alt="Logo" className="w-16 h-16" />
@@ -54,7 +54,7 @@ const Navbar = () => {
       <ul
         className={
           mobileNav
-            ? " flex flex-col md:hidden gap-12 text-5xl absolute w-full h-screen bg-[#263A5F] justify-center items-center top-0 left-0"
+            ? " flex flex-col md:hidden gap-12 text-5xl absolute w-full h-screen bg-[#0a192f] justify-center items-center top-0 left-0"
             : "hidden"
         }
       >
