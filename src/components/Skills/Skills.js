@@ -25,16 +25,16 @@ const skillList = [
     name: "Ruby",
   },
   {
+    logo: postgresql,
+    name: "PostgreSQL",
+  },
+  {
     logo: tailwindcss,
     name: "Tailwind CSS",
   },
   {
     logo: react,
     name: "React",
-  },
-  {
-    logo: postgresql,
-    name: "PostgreSQL",
   },
   {
     logo: rails,
