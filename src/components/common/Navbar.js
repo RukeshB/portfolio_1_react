@@ -2,19 +2,43 @@ import logo from "../../assets/images/Rukesh Logo.png";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useState } from "react";
 import SocialLinkMenu from "./SocialLinkMenu";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const handleClick = () => setMobileNav(!mobileNav);
-  const navItem = ["Home", "About", "Skill", "Work", "Contact"];
+  const navItem = [
+    {
+      name: "Home",
+      link_name: "home",
+    },
+    {
+      name: "About",
+      link_name: "about",
+    },
+    {
+      name: "Skill",
+      link_name: "skill",
+    },
+    {
+      name: "Work",
+      link_name: "work",
+    },
+    {
+      name: "Contact",
+      link_name: "contact",
+    },
+  ];
 
   const navList = navItem.map((item) => {
     return (
       <li
         className="hover:text-[#FDB515] duration-200 cursor-pointer"
-        key={item}
+        key={item.name}
       >
-        {item}
+        <Link to={item.link_name} smooth={true} duration={500}>
+          {item.name}
+        </Link>
       </li>
     );
   });
@@ -23,10 +47,10 @@ const Navbar = () => {
     return (
       <li
         className="hover:text-[#FDB515] duration-200 cursor-pointer"
-        key={item}
+        key={item.name}
         onClick={() => setMobileNav(false)}
       >
-        {item}
+        {item.name}
       </li>
     );
   });
