@@ -6,7 +6,7 @@ import SocialLinkMenu from "./SocialLinkMenu";
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const handleClick = () => setMobileNav(!mobileNav);
-  const navItem = ["Home", "About", "Work", "Contact"];
+  const navItem = ["Home", "About", "Skill", "Work", "Contact"];
 
   const navList = navItem.map((item) => {
     return (
@@ -32,17 +32,17 @@ const Navbar = () => {
   });
 
   return (
-    <div className="fixed bg-[#0a192f] flex justify-between items-center w-screen px-4 py-2 h-14 text-white">
+    <div className="fixed bg-[#0a192f] flex justify-between items-center w-screen px-4 py-2 h-14 text-white z-10">
       {/* logo */}
       <div>
         <img src={logo} alt="Logo" className="w-16 h-16" />
       </div>
 
       {/* nav list */}
-      <ul className="hidden md:flex gap-6 text-xl">{navList}</ul>
+      <ul className="hidden gap-6 text-xl md:flex">{navList}</ul>
 
       {/* hamburger */}
-      <div className="flex md:hidden cursor-pointer z-20" onClick={handleClick}>
+      <div className="z-20 flex cursor-pointer md:hidden" onClick={handleClick}>
         {mobileNav ? (
           <HiXMark size={30} className="hover:text-red-600" />
         ) : (

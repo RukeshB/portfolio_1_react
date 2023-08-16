@@ -29,7 +29,7 @@ const CodePen = () => {
             </h3>
           </div>
           {/* code pen list */}
-          <div className="max-w-[1000px]">
+          <div className="max-w-[1000px] w-full ml-10 md:ml-2">
             <ul className="mt-4">
                 {codePens}
             </ul>
