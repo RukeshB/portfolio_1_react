@@ -10,7 +10,7 @@ const SocialLink = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={props.name}
-          className="w-full p-4 flex justify-between items-center text-white"
+          className="flex items-center justify-between w-full p-4 text-white"
         >
           {props.name} {props.icon}
         </a>
@@ -28,7 +28,7 @@ const SocialLinkMenu = () => {
 
         <SocialLink color='bg-orange-700' link='mailto:rukeshbasukala@gmail.com' name='Email' icon={<HiOutlineMail size={30} />}/>
 
-        <SocialLink color='bg-green-700' link='https://github.com/RukeshB' name='Resume' icon={<BsPersonLinesFill size={30} />}/>
+        <SocialLink color='bg-green-700' link='/Rukesh-Basukalabackend-2023-8-3.pdf' name='Resume' icon={<BsPersonLinesFill size={30} />}/>
 
       </ul>
     </div>
