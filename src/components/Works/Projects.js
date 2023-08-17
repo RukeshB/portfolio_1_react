@@ -84,17 +84,17 @@ const ProjectContainer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.github_link}
-          className="px-4 py-2 rounded-md bg-white hover:bg-[#FDB515]"
+          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
         >
-          View Code
+          Code
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.live_demo_link}
-          className="px-4 py-2 rounded-md bg-white hover:bg-[#FDB515]"
+          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
         >
-          Live
+          Demo
         </a>
       </div>
     );
@@ -105,9 +105,9 @@ const ProjectContainer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.github_link}
-          className="px-4 py-2 rounded-md bg-white hover:bg-[#FDB515]"
+          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
         >
-          View Code
+          Code
         </a>
       </div>
     );
@@ -116,8 +116,8 @@ const ProjectContainer = (props) => {
   return (
     <div className="relative rounded-lg shadow-md h-36 group shadow-gray-700">
       {/* hover div */}
-      <div className="rounded-md absolute w-full h-0 duration-200 bg-[#0000008f] group-hover:h-full">
-        <div className="flex-col items-center justify-center hidden w-full h-full gap-8 opacity-100 group-hover:flex">
+      <div className="rounded-md absolute w-full h-full duration-200 bg-[#0000008f] group-hover:h-full hover-hover:h-0">
+        <div className="flex flex-col items-center justify-center w-full h-full gap-8 opacity-100 group-hover:flex hover-hover:hidden">
           <h1 className="text-2xl font-bold">{props.project.title}</h1>
           {buttons}
         </div>
