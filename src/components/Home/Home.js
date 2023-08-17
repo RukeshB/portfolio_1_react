@@ -20,7 +20,7 @@ const Home = () => {
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
-            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#FDB515] hover:border-[#FDB515]">
+            <button className="flex group button">
               View Work
               <span className="duration-300 group-hover:rotate-90 group-hover:-mt-3">
                 <HiArrowNarrowRight className="ml-3 " />

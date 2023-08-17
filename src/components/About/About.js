@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen text-gray-300">
+    <div name="about" className="w-full h-screen">
       <div className="flex flex-col items-center justify-center w-full h-full gap-4">
         <div className="max-w-[1000px] grid w-full gap-6 px-4 sm:grid-cols-2">
           <div className="sm:text-right">
-            <h3 className="text-2xl font-bold md:text-4xl border-b-4 border-[#FDB515] inline">
+            <h3 className="inline title">
               About
             </h3>
           </div>

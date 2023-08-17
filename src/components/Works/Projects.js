@@ -84,7 +84,7 @@ const ProjectContainer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.github_link}
-          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
+          className="button"
         >
           Code
         </a>
@@ -92,7 +92,7 @@ const ProjectContainer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.live_demo_link}
-          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
+          className="button"
         >
           Demo
         </a>
@@ -105,7 +105,7 @@ const ProjectContainer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.project.github_link}
-          className="px-4 py-2 rounded-md border-2 border-[#FDB515] hover-hover:bg-transparent hover-hover:text-white hover-hover:border-white hover:border-[#FDB515] hover:bg-[#FDB515] hover:text-[#0a192f] bg-[#FDB515] text-[#0a192f]"
+          className="button"
         >
           Code
         </a>
@@ -136,7 +136,7 @@ const Projects = () => {
     <div className="flex flex-col items-center justify-center w-full gap-4">
       {/* title */}
       <div className="max-w-[1000px] w-full mb-2 ml-10 md:ml-2">
-        <h3 className="text-2xl font-bold md:text-4xl border-b-4 border-[#FDB515] inline">
+        <h3 className="inline title">
           Projects
         </h3>
       </div>

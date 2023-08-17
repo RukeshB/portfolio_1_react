@@ -34,7 +34,7 @@ const CodePen = () => {
     <div className="flex flex-col items-center justify-center w-full mb-20">
       {/* title */}
       <div className="max-w-[1000px] w-full mb-2 ml-10 md:ml-2">
-        <h3 className="text-2xl font-bold md:text-4xl border-b-4 border-[#FDB515] inline">
+        <h3 className="inline title">
           Code pen
         </h3>
       </div>
