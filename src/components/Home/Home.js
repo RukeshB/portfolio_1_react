@@ -1,4 +1,5 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -18,12 +19,14 @@ const Home = () => {
           building responsive full-stack web applications.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#FDB515] hover:border-[#FDB515]">
-            View Work
-            <span className="duration-300 group-hover:rotate-90 group-hover:-mt-3">
-              <HiArrowNarrowRight className="ml-3 " />
-            </span>
-          </button>
+          <Link to="work" smooth={true} duration={500}>
+            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#FDB515] hover:border-[#FDB515]">
+              View Work
+              <span className="duration-300 group-hover:rotate-90 group-hover:-mt-3">
+                <HiArrowNarrowRight className="ml-3 " />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

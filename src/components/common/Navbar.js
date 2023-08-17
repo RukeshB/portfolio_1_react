@@ -36,21 +36,9 @@ const Navbar = () => {
         className="hover:text-[#FDB515] duration-200 cursor-pointer"
         key={item.name}
       >
-        <Link to={item.link_name} smooth={true} duration={500}>
+        <Link to={item.link_name} smooth={true} duration={500} onClick={() => { if(mobileNav)setMobileNav(false)}}>
           {item.name}
         </Link>
-      </li>
-    );
-  });
-
-  const mobileNavList = navItem.map((item) => {
-    return (
-      <li
-        className="hover:text-[#FDB515] duration-200 cursor-pointer"
-        key={item.name}
-        onClick={() => setMobileNav(false)}
-      >
-        {item.name}
       </li>
     );
   });
@@ -82,7 +70,7 @@ const Navbar = () => {
             : "hidden"
         }
       >
-        {mobileNavList}
+        {navList}
       </ul>
 
       {/* social icon */}
