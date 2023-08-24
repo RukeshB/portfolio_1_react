@@ -4,6 +4,7 @@ import LCBN from "../../assets/images/project/lcbn.png";
 import snake_game from "../../assets/images/project/snake_game.png";
 import trend_tour from "../../assets/images/project/trend_tour.png";
 import quiz from "../../assets/images/project/quiz.png";
+import real_chat from "../../assets/images/project/real-chat.png";
 
 const projectList = [
   {
@@ -16,13 +17,19 @@ const projectList = [
     title: "Portfolio",
     image: portfolio_1,
     github_link: "https://github.com/RukeshB/portfolio_1_react",
-    live_demo_link: "",
+    live_demo_link: "https://portfolio.rukeshb.com.np/",
   },
   {
     title: "LCBN",
     image: LCBN,
-    github_link: "https://github.com/RukeshB/lcbn-directory-react",
+    github_link: "https://github.com/RukeshB/lcbn-react",
     live_demo_link: "https://lcbn.netlify.app/",
+  },
+  {
+    title: "Real Chat",
+    image: real_chat,
+    github_link: "https://github.com/RukeshB/real_chat_react",
+    live_demo_link: "https://real-chat.rukeshb.com.np/",
   },
   {
     title: "Snake Game",
