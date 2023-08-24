@@ -28,7 +28,7 @@ const SocialLinkMenu = () => {
 
         <SocialLink color='bg-orange-700' link='mailto:rukeshbasukala@gmail.com' name='Email' icon={<HiOutlineMail size={30} />}/>
 
-        <SocialLink color='bg-green-700' link='/Rukesh-Basukalabackend-2023-8-3.pdf' name='Resume' icon={<BsPersonLinesFill size={30} />}/>
+        <SocialLink color='bg-green-700' link='/Rukesh_basukala.pdf' name='Resume' icon={<BsPersonLinesFill size={30} />}/>
 
       </ul>
     </div>
