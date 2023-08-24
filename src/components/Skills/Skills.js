@@ -57,7 +57,7 @@ const skillCardList = skillList.map((skill) => {
 
 const Skills = () => {
   return (
-    <div name="skill" className="w-full h-screen">
+    <div name="skill" className="w-full min-h-screen">
       <div className="flex flex-col items-center justify-center w-full h-full gap-4">
         <div className="max-w-[1000px]">
           <h3 className="title">

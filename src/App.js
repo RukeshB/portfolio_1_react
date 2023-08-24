@@ -7,7 +7,7 @@ import Works from "./components/Works/Work";
 
 function App() {
   return (
-    <div className="bg-[#0a192f] text-gray-300">
+    <div className="bg-[#0a192f] text-gray-300 max-w-screen overflow-hidden">
      <Navbar/>
      <Home/>
      <About/>
