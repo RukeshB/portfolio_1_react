@@ -1,5 +1,5 @@
 import ip_address_tracker from "../../assets/images/project/ip_address_tracker.png";
-import portfolio_1 from "../../assets/images/project/portfolio_1.png";
+import tic_tac_toe from "../../assets/images/project/tic tac toe.png";
 import LCBN from "../../assets/images/project/lcbn.png";
 import snake_game from "../../assets/images/project/snake_game.png";
 import trend_tour from "../../assets/images/project/trend_tour.png";
@@ -14,10 +14,10 @@ const projectList = [
     live_demo_link: "https://rukeshb.github.io/ip_address_tracker/",
   },
   {
-    title: "Portfolio",
-    image: portfolio_1,
-    github_link: "https://github.com/RukeshB/portfolio_1_react",
-    live_demo_link: "https://portfolio.rukeshb.com.np/",
+    title: "Tic Tac Toe",
+    image: tic_tac_toe,
+    github_link: "https://github.com/RukeshB/tic-tac-toe-react",
+    live_demo_link: "https://tic-tac-toe.rukeshb.com.np/",
   },
   {
     title: "LCBN",
