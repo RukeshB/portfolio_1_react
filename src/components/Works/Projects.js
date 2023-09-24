@@ -62,6 +62,12 @@ const projectList = [
     live_demo_link: "",
   },
   {
+    title: "Weather App Rails",
+    image: "",
+    github_link: "https://github.com/RukeshB/WeatherApp-rails",
+    live_demo_link: "",
+  },
+  {
     title: "HRM Clone API",
     image: "",
     github_link: "https://github.com/Sad-ikshya/HRM",
