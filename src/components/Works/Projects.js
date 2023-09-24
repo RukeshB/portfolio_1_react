@@ -12,66 +12,77 @@ const projectList = [
     image: ip_address_tracker,
     github_link: "https://github.com/RukeshB/ip_address_tracker",
     live_demo_link: "https://rukeshb.github.io/ip_address_tracker/",
+    stack: ["Angular"]
   },
   {
     title: "Tic Tac Toe",
     image: tic_tac_toe,
     github_link: "https://github.com/RukeshB/tic-tac-toe-react",
     live_demo_link: "https://tic-tac-toe.rukeshb.com.np/",
+    stack: ["React"]
   },
   {
     title: "LCBN",
     image: LCBN,
     github_link: "https://github.com/RukeshB/lcbn-react",
     live_demo_link: "https://lcbn.netlify.app/",
+    stack: ["React"]
   },
   {
     title: "Real Chat",
     image: real_chat,
     github_link: "https://github.com/RukeshB/real_chat_react",
     live_demo_link: "https://real-chat.rukeshb.com.np/",
+    stack: ["React", "Fire Base"]
   },
   {
     title: "Snake Game",
     image: snake_game,
     github_link: "https://github.com/RukeshB/snake-game",
     live_demo_link: "https://rukeshb.github.io/snake-game/",
+    stack: ["JS"]
   },
   {
     title: "Trend Tour",
     image: trend_tour,
     github_link: "https://github.com/RukeshB/Trend-Tour",
     live_demo_link: "https://rukeshb.github.io/Trend-Tour/",
+    stack: ["JS"]
   },
   {
     title: "Quiz",
     image: quiz,
     github_link: "https://github.com/Confused-Owls/laravel-quiz",
     live_demo_link: "",
+    stack: ["Laravel"]
   },
   {
     title: "Expenses Tracking System",
     image: "",
     github_link: "https://github.com/RukeshB/expenses-tracker",
     live_demo_link: "",
+    stack: ["Rails"]
   },
   {
     title: "Movie Review API",
     image: "",
     github_link: "https://github.com/RukeshB/movie-review-app-rails",
     live_demo_link: "",
+    stack: ["Rails"]
   },
   {
     title: "Weather App Rails",
     image: "",
     github_link: "https://github.com/RukeshB/WeatherApp-rails",
     live_demo_link: "",
+    stack: ["Rails"]
   },
   {
     title: "HRM Clone API",
     image: "",
     github_link: "https://github.com/Sad-ikshya/HRM",
     live_demo_link: "",
+    stack: ["Spring Boot"]
   },
 ];
 
@@ -130,8 +141,9 @@ const ProjectContainer = (props) => {
     <div className="relative rounded-lg shadow-md h-36 group shadow-gray-700">
       {/* hover div */}
       <div className="rounded-md absolute w-full h-full duration-200 bg-[#0000008f] group-hover:h-full hover-hover:h-0">
-        <div className="flex flex-col items-center justify-center w-full h-full gap-8 opacity-100 group-hover:flex hover-hover:hidden">
+        <div className="flex flex-col items-center w-full h-full opacity-100 justify-evenly group-hover:flex hover-hover:hidden">
           <h1 className="text-2xl font-bold">{props.project.title}</h1>
+          <p className="text-base"> Stack: {props.project.stack.join(', ')}</p>
           {buttons}
         </div>
       </div>
